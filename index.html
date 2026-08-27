@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111827">
+<title>إبراهيم أبو غانم</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;
+  background:#f5f7fb;
+  color:#111827;
+}
+
+.app{
+  max-width:520px;
+  min-height:100vh;
+  margin:auto;
+  padding:20px 16px 40px;
+}
+
+header{
+  text-align:center;
+  padding:25px 4px 20px;
+}
+
+h1{
+  margin:0;
+  font-size:30px;
+}
+
+header p{
+  color:#6b7280;
+}
+
+.card{
+  background:white;
+  border-radius:22px;
+  padding:18px;
+  margin:12px 0;
+  box-shadow:0 8px 30px #11182712;
+  border:1px solid #e5e7eb;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.item{
+  padding:22px 12px;
+  text-align:center;
+  border-radius:18px;
+  background:#f9fafb;
+  border:1px solid #e5e7eb;
+  cursor:pointer;
+}
+
+.icon{
+  font-size:30px;
+  display:block;
+  margin-bottom:8px;
+}
+
+.item b{
+  font-size:17px;
+}
+
+.item small{
+  display:block;
+  color:#6b7280;
+  margin-top:5px;
+}
+
+button{
+  width:100%;
+  border:0;
+  border-radius:15px;
+  padding:14px;
+  font-size:16px;
+  font-weight:700;
+  background:#111827;
+  color:white;
+  margin-top:8px;
+}
+
+footer{
+  text-align:center;
+  color:#9ca3af;
+  font-size:13px;
+  margin-top:22px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+<header>
+<h1>إبراهيم أبو غانم</h1>
+<p>مركز الأدوات والخدمات</p>
+</header>
+
+<section class="card">
+
+<div class="grid">
+
+<div class="item" onclick="info('DNS')">
+<span class="icon">🌐</span>
+<b>DNS</b>
+<small>إعدادات الشبكة</small>
+</div>
+
+<div class="item" onclick="info('ESign')">
+<span class="icon">✍️</span>
+<b>ESign</b>
+<small>توقيع الملفات</small>
+</div>
+
+<div class="item" onclick="info('KSign')">
+<span class="icon">📱</span>
+<b>KSign</b>
+<small>إدارة التطبيقات</small>
+</div>
+
+<div class="item" onclick="info('الملفات')">
+<span class="icon">📁</span>
+<b>الملفات</b>
+<small>ملفاتك وروابطك</small>
+</div>
+
+</div>
+</section>
+
+<section class="card">
+
+<b>مرحبًا بك 👋</b>
+
+<p style="color:#6b7280;line-height:1.7">
+أهلًا بك في موقع إبراهيم أبو غانم.
+</p>
+
+<button onclick="alert('أهلًا بك في موقع إبراهيم أبو غانم')">
+فتح الخدمة
+</button>
+
+</section>
+
+<footer>
+© 2026 إبراهيم أبو غانم
+</footer>
+
+</div>
+
+<script>
+function info(name){
+  alert("قسم " + name + " جاهز للتخصيص.");
+}
+</script>
+
+</body>
+</html>
